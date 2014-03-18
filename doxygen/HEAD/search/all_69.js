@@ -12,6 +12,7 @@ var searchData=
   ['ipopt_2dtd_2ehh',['ipopt-td.hh',['../a00014.html',1,'']]],
   ['ipopt_2ecc',['ipopt.cc',['../a00015.html',1,'']]],
   ['ipopt_2ehh',['ipopt.hh',['../a00016.html',1,'']]],
+  ['ipopt_5fdefault_5flinear_5fsolver',['IPOPT_DEFAULT_LINEAR_SOLVER',['../a00009.html#ace87303d4b8363dff75d85b45f57800f',1,'ipopt-common.hxx']]],
   ['ipopt_5fsolver_5ft',['ipopt_solver_t',['../a00021.html#a218d645e29585a7a80a25006701de6f6',1,'roboptim']]],
   ['ipoptcheckgradient',['IpoptCheckGradient',['../a00023.html#a3c9e7df38bd491822114ae8e533c1afa',1,'roboptim::detail']]],
   ['ipoptsolver',['IpoptSolver',['../a00001.html',1,'roboptim']]],
