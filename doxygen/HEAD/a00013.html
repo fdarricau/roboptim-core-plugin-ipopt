@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>ipopt.cc File Reference</title>
+<title>ipopt-td.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -55,201 +55,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Defines</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">ipopt.cc File Reference</div>  </div>
+<div class="title">ipopt-td.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br/>
 <code>#include &lt;cstring&gt;</code><br/>
+<code>#include &lt;typeinfo&gt;</code><br/>
 <code>#include &lt;boost/foreach.hpp&gt;</code><br/>
 <code>#include &lt;boost/variant/apply_visitor.hpp&gt;</code><br/>
 <code>#include &lt;coin/IpIpoptApplication.hpp&gt;</code><br/>
 <code>#include &lt;coin/IpTNLP.hpp&gt;</code><br/>
 <code>#include &lt;roboptim/core/util.hh&gt;</code><br/>
-<code>#include &quot;<a class="el" href="a00014.html">roboptim/core/plugin/ipopt.hh</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="a00010.html">roboptim/core/plugin/ipopt-parameters-updater.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00014.html">roboptim/core/plugin/ipopt/ipopt-td.hh</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00010.html">roboptim/core/plugin/ipopt/ipopt-parameters-updater.hh</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="a00009.html">ipopt-common.hxx</a>&quot;</code><br/>
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for ipopt.cc:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00034.png" border="0" usemap="#ipopt_8cc" alt=""/></div>
-<map name="ipopt_8cc" id="ipopt_8cc">
-<area shape="rect" id="node17" href="a00014.html" title="roboptim/core/plugin/ipopt.hh" alt="" coords="917,86,1109,117"/><area shape="rect" id="node43" href="a00010.html" title="roboptim/core/plugin/ipopt&#45;parameters&#45;updater.hh" alt="" coords="1459,166,1768,197"/><area shape="rect" id="node46" href="a00009.html" title="ipopt&#45;common.hxx" alt="" coords="1147,86,1277,117"/><area shape="rect" id="node31" href="a00008.html" title="roboptim/core/plugin/ipopt&#45;common.hh" alt="" coords="883,166,1131,197"/></map>
-</div>
+<code>#include &quot;<a class="el" href="a00018.html">tnlp.hh</a>&quot;</code><br/>
 </div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html">roboptim::detail::Tnlp</a></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00016.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solvers related classes. </p>
 <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html">roboptim::detail</a></td></tr>
-<tr><td colspan="2"><h2><a name="define-members"></a>
-Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>(NAME, ERROR)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>(NAME)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(MACRO)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#adbaea363c26f0140966c80122bd19f76">MAP_IPOPT_FATALS</a>(MACRO)&#160;&#160;&#160;MACRO(USER_REQUESTED_STOP)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#a38288747f2e9691834f7b57a057a98d2">FILL_RESULT</a>()</td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00001.html#ab94817c8d2c561d090d34a465554d277">IpoptSolver::solver_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#aa685d6d32a7ab84df30a78d101ed466c">solver_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00005.html">Solver</a><br class="typebreak"/>
+&lt; TwiceDifferentiableFunction, <br class="typebreak"/>
+boost::mpl::vector<br class="typebreak"/>
+&lt; LinearFunction, <br class="typebreak"/>
+TwiceDifferentiableFunction &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#ac10fe741795fcdcb1b58c999936e6e27">roboptim::solver_ipopt_td_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00004.html#a55877ea783fca3082cfda7c60f8ceee8">IpoptSolverTd::solver_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#a7945191894c34871aea7c0918ea47560">solver_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#af5a09a391e2340d6b2fe526d04a90a6f">roboptim::detail::jacobianFromGradients</a> (DerivableFunction::matrix_t &amp;jac, const IpoptSolver::problem_t::constraints_t &amp;c, const DerivableFunction::vector_t &amp;x)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00018.html#a4ff579e89e31fd34e1450e9dbaddaa12">roboptim::detail::computeConstraintsOutputSize</a> (const IpoptSolver::problem_t &amp;pb)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ROBOPTIM_DLLEXPORT unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#a4ddee346c9488925f266b831b229d18a">getSizeOfProblem</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">ROBOPTIM_DLLEXPORT <a class="el" href="a00011.html#a7945191894c34871aea7c0918ea47560">solver_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#a486da1110ef092e0c796e9d60e094ab6">create</a> (const IpoptSolver::problem_t &amp;pb)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">ROBOPTIM_DLLEXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#af992438f02837bfe836ba0a937747829">destroy</a> (<a class="el" href="a00011.html#a7945191894c34871aea7c0918ea47560">solver_t</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ROBOPTIM_DLLEXPORT const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#a25ff9384fbf0c8e416a686a67c7d1fdd">getTypeIdOfConstraintsList</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ROBOPTIM_DLLEXPORT <a class="el" href="a00011.html#aad0576ddcd5b2becbaa3798b8bfe0b31">solver_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#af1ebba688fe13993acd8331ad6c7cde0">create</a> (const IpoptSolverTd::problem_t &amp;pb)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ROBOPTIM_DLLEXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00013.html#af992438f02837bfe836ba0a937747829">destroy</a> (<a class="el" href="a00011.html#aad0576ddcd5b2becbaa3798b8bfe0b31">solver_t</a> *p)</td></tr>
 </table>
-<hr/><h2>Define Documentation</h2>
-<a class="anchor" id="a38288747f2e9691834f7b57a057a98d2"></a><!-- doxytag: member="ipopt.cc::FILL_RESULT" ref="a38288747f2e9691834f7b57a057a98d2" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="a00013.html#a38288747f2e9691834f7b57a057a98d2">FILL_RESULT</a></td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">array_to_vector (res.x, x);     \
-      res.constraints.resize (m);     \
-      array_to_vector (res.constraints, g);   \
-      res.lambda.resize (m);        \
-      array_to_vector (res.lambda, lambda);   \
-      res.value (0) = obj_value
-</pre></div>
-<p>Referenced by <a class="el" href="a00005.html#a8e63524c60c5dfa59548e0e2f8b52a10">roboptim::detail::Tnlp::finalize_solution()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a25022b885198970781b6c6205b562bc3"></a><!-- doxytag: member="ipopt.cc::MAP_IPOPT_ERRORS" ref="a25022b885198970781b6c6205b562bc3" args="(MACRO)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="a00013.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a></td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">MACRO</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">MACRO(MAXITER_EXCEEDED, <span class="stringliteral">&quot;Max iteration exceeded&quot;</span>);    \
-      MACRO(STOP_AT_TINY_STEP,            \
-      <span class="stringliteral">&quot;Algorithm proceeds with very little progress&quot;</span>);    \
-      MACRO(LOCAL_INFEASIBILITY,          \
-      <span class="stringliteral">&quot;Algorithm converged to a point of local infeasibility&quot;</span>); \
-      MACRO(DIVERGING_ITERATES, <span class="stringliteral">&quot;Iterate diverges&quot;</span>);      \
-      MACRO(RESTORATION_FAILURE, <span class="stringliteral">&quot;Restoration phase failed&quot;</span>);   \
-      MACRO(ERROR_IN_STEP_COMPUTATION,          \
-      <span class="stringliteral">&quot;Unrecoverable error while Ipopt tried to compute&quot;</span>    \
-      <span class="stringliteral">&quot; the search direction&quot;</span>);         \
-      MACRO(INVALID_NUMBER_DETECTED,          \
-      <span class="stringliteral">&quot;Ipopt received an invalid number&quot;</span>);      \
-      MACRO(INTERNAL_ERROR, <span class="stringliteral">&quot;Unknown internal error&quot;</span>);      \
-      MACRO(TOO_FEW_DEGREES_OF_FREEDOM, <span class="stringliteral">&quot;Two few degrees of freedom&quot;</span>);  \
-      MACRO(INVALID_OPTION, <span class="stringliteral">&quot;Invalid option&quot;</span>);        \
-      MACRO(OUT_OF_MEMORY, <span class="stringliteral">&quot;Out of memory&quot;</span>);        \
-      MACRO(CPUTIME_EXCEEDED, <span class="stringliteral">&quot;Cpu time exceeded&quot;</span>)
-</pre></div>
-<p>Referenced by <a class="el" href="a00005.html#a8e63524c60c5dfa59548e0e2f8b52a10">roboptim::detail::Tnlp::finalize_solution()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adbaea363c26f0140966c80122bd19f76"></a><!-- doxytag: member="ipopt.cc::MAP_IPOPT_FATALS" ref="adbaea363c26f0140966c80122bd19f76" args="(MACRO)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="a00013.html#adbaea363c26f0140966c80122bd19f76">MAP_IPOPT_FATALS</a></td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">MACRO</td><td>)</td>
-          <td>&#160;&#160;&#160;MACRO(USER_REQUESTED_STOP)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00005.html#a8e63524c60c5dfa59548e0e2f8b52a10">roboptim::detail::Tnlp::finalize_solution()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac2223e7c9508ceda166a6162f34139cd"></a><!-- doxytag: member="ipopt.cc::SWITCH_ERROR" ref="ac2223e7c9508ceda166a6162f34139cd" args="(NAME, ERROR)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="a00013.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a></td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ERROR&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">case</span> NAME:        \
-      solver_.result_ = SolverError (ERROR);  \
-      break
-</pre></div>
-<p>Referenced by <a class="el" href="a00005.html#a8e63524c60c5dfa59548e0e2f8b52a10">roboptim::detail::Tnlp::finalize_solution()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7ed14599ccccd201b8d44cb8b70652c3"></a><!-- doxytag: member="ipopt.cc::SWITCH_FATAL" ref="a7ed14599ccccd201b8d44cb8b70652c3" args="(NAME)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="a00013.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a></td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">case</span> NAME:        \
-      assert (0);       \
-      break
-</pre></div>
-<p>Referenced by <a class="el" href="a00005.html#a8e63524c60c5dfa59548e0e2f8b52a10">roboptim::detail::Tnlp::finalize_solution()</a>.</p>
-
-</div>
-</div>
 <hr/><h2>Typedef Documentation</h2>
-<a class="anchor" id="aa685d6d32a7ab84df30a78d101ed466c"></a><!-- doxytag: member="ipopt.cc::solver_t" ref="aa685d6d32a7ab84df30a78d101ed466c" args="" -->
+<a class="anchor" id="a7945191894c34871aea7c0918ea47560"></a><!-- doxytag: member="ipopt&#45;td.cc::solver_t" ref="a7945191894c34871aea7c0918ea47560" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00001.html#ab94817c8d2c561d090d34a465554d277">IpoptSolver::solver_t</a> <a class="el" href="a00011.html#a7945191894c34871aea7c0918ea47560">solver_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00004.html#a55877ea783fca3082cfda7c60f8ceee8">IpoptSolverTd::solver_t</a> <a class="el" href="a00011.html#aad0576ddcd5b2becbaa3798b8bfe0b31">solver_t</a></td>
         </tr>
       </table>
 </div>
@@ -258,14 +110,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a486da1110ef092e0c796e9d60e094ab6"></a><!-- doxytag: member="ipopt.cc::create" ref="a486da1110ef092e0c796e9d60e094ab6" args="(const IpoptSolver::problem_t &amp;pb)" -->
+<a class="anchor" id="af1ebba688fe13993acd8331ad6c7cde0"></a><!-- doxytag: member="ipopt&#45;td.cc::create" ref="af1ebba688fe13993acd8331ad6c7cde0" args="(const IpoptSolverTd::problem_t &amp;pb)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ROBOPTIM_DLLEXPORT <a class="el" href="a00011.html#a7945191894c34871aea7c0918ea47560">solver_t</a> * <a class="el" href="a00013.html#a486da1110ef092e0c796e9d60e094ab6">create</a> </td>
+          <td class="memname">ROBOPTIM_DLLEXPORT <a class="el" href="a00011.html#aad0576ddcd5b2becbaa3798b8bfe0b31">solver_t</a> * <a class="el" href="a00015.html#a486da1110ef092e0c796e9d60e094ab6">create</a> </td>
           <td>(</td>
-          <td class="paramtype">const IpoptSolver::problem_t &amp;&#160;</td>
+          <td class="paramtype">const IpoptSolverTd::problem_t &amp;&#160;</td>
           <td class="paramname"><em>pb</em></td><td>)</td>
           <td></td>
         </tr>
@@ -275,14 +127,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af992438f02837bfe836ba0a937747829"></a><!-- doxytag: member="ipopt.cc::destroy" ref="af992438f02837bfe836ba0a937747829" args="(solver_t *p)" -->
+<a class="anchor" id="af992438f02837bfe836ba0a937747829"></a><!-- doxytag: member="ipopt&#45;td.cc::destroy" ref="af992438f02837bfe836ba0a937747829" args="(solver_t *p)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ROBOPTIM_DLLEXPORT void <a class="el" href="a00013.html#af992438f02837bfe836ba0a937747829">destroy</a> </td>
+          <td class="memname">ROBOPTIM_DLLEXPORT void <a class="el" href="a00015.html#af992438f02837bfe836ba0a937747829">destroy</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00011.html#a7945191894c34871aea7c0918ea47560">solver_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00011.html#aad0576ddcd5b2becbaa3798b8bfe0b31">solver_t</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
@@ -292,12 +144,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4ddee346c9488925f266b831b229d18a"></a><!-- doxytag: member="ipopt.cc::getSizeOfProblem" ref="a4ddee346c9488925f266b831b229d18a" args="()" -->
+<a class="anchor" id="a4ddee346c9488925f266b831b229d18a"></a><!-- doxytag: member="ipopt&#45;td.cc::getSizeOfProblem" ref="a4ddee346c9488925f266b831b229d18a" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ROBOPTIM_DLLEXPORT unsigned <a class="el" href="a00013.html#a4ddee346c9488925f266b831b229d18a">getSizeOfProblem</a> </td>
+          <td class="memname">ROBOPTIM_DLLEXPORT unsigned <a class="el" href="a00015.html#a4ddee346c9488925f266b831b229d18a">getSizeOfProblem</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25ff9384fbf0c8e416a686a67c7d1fdd"></a><!-- doxytag: member="ipopt&#45;td.cc::getTypeIdOfConstraintsList" ref="a25ff9384fbf0c8e416a686a67c7d1fdd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ROBOPTIM_DLLEXPORT const char* <a class="el" href="a00015.html#a25ff9384fbf0c8e416a686a67c7d1fdd">getTypeIdOfConstraintsList</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -326,6 +194,6 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00013.html">ipopt.cc</a>      </li>
+      <li class="navelem"><a class="el" href="a00013.html">ipopt-td.cc</a>      </li>
 </body>
 </html>

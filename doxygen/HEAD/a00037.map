@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$a00002.html" title="IpoptSolverCommon\&lt; Solver\&lt; DerivableFunction, boost::mpl::vector\&lt; LinearFunction, DifferentiableFunction \&gt; \&gt; \&gt;" alt="" coords="163,5,861,35"/>
-<area shape="rect" id="node7" href="$a00002.html" title="IpoptSolverCommon\&lt; Solver\&lt; TwiceDifferentiableFunction, boost::mpl::vector\&lt; LinearFunction, TwiceDifferentiableFunction \&gt; \&gt; \&gt;" alt="" coords="115,58,909,89"/>
-<area shape="rect" id="node5" href="$a00001.html" title="Ipopt based solver." alt="" coords="968,5,1115,35"/>
-<area shape="rect" id="node9" href="$a00003.html" title="Ipopt based solver." alt="" coords="959,58,1124,89"/>
-</map>

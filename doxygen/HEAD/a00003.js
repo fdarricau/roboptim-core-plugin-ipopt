@@ -1,8 +1,9 @@
 var a00003 =
 [
-    [ "parent_t", "a00003.html#a01a74f49932e09768fa3d0dcc39bf9dd", null ],
-    [ "solver_t", "a00003.html#a55877ea783fca3082cfda7c60f8ceee8", null ],
-    [ "IpoptSolverTd", "a00003.html#a221312bc367e78b8aae20d1d5bb65ce2", null ],
-    [ "~IpoptSolverTd", "a00003.html#a9460ad93f834fa5178ded299c3d58bc3", null ],
-    [ "detail::TnlpTd", "a00003.html#aa11e84f0008f5d03a623ce37d0474509", null ]
+    [ "commonConstraintFunction_t", "a00003.html#aaf8d7744eb05b6b5fe2bc35793b37542", null ],
+    [ "parent_t", "a00003.html#af60c53835c4c83daeaa31af876c43ec9", null ],
+    [ "solver_t", "a00003.html#ad0165234a3e32e854d76c1987d1d1852", null ],
+    [ "IpoptSolverSparse", "a00003.html#adfafc153e61cced21a437eca752fc44f", null ],
+    [ "~IpoptSolverSparse", "a00003.html#aebcbd6bd5f874421e8a2887cfc318f4a", null ],
+    [ "::roboptim::detail::Tnlp", "a00003.html#a54341ab39dc8b397382bb8b20ec84011", null ]
 ];

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Mathematical functions</title>
+<title>roboptim Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -12,7 +12,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -33,6 +33,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+    </ul>
+  </div>
 </div>
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -48,11 +54,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">Mathematical functions</div>  </div>
+<div class="title">roboptim Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Meta-functions, functions and solvers related classes.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html">detail</a></td></tr>
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html">IpoptSolverCommon</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00020.html" title="Ipopt classes.">Ipopt</a> common solver.  <a href="a00002.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00003.html">IpoptSolverSparse</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00020.html" title="Ipopt classes.">Ipopt</a> based solver.  <a href="a00003.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html">IpoptSolverTd</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00020.html" title="Ipopt classes.">Ipopt</a> based solver.  <a href="a00004.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00001.html">IpoptSolver</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00020.html" title="Ipopt classes.">Ipopt</a> based solver.  <a href="a00001.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00005.html">Solver</a><br class="typebreak"/>
+&lt; DifferentiableSparseFunction, <br class="typebreak"/>
+boost::mpl::vector<br class="typebreak"/>
+&lt; LinearSparseFunction, <br class="typebreak"/>
+DifferentiableSparseFunction &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#a218d645e29585a7a80a25006701de6f6">ipopt_solver_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00005.html">Solver</a><br class="typebreak"/>
+&lt; TwiceDifferentiableFunction, <br class="typebreak"/>
+boost::mpl::vector<br class="typebreak"/>
+&lt; LinearFunction, <br class="typebreak"/>
+TwiceDifferentiableFunction &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html#ac10fe741795fcdcb1b58c999936e6e27">solver_ipopt_td_t</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Meta-functions, functions and solvers related classes. </p>
+<p>ROBOPTIM_CORE_IPOPT_PLUGIN_CHECK_GRADIENT.</p>
+</div><hr/><h2>Typedef Documentation</h2>
+<a class="anchor" id="a218d645e29585a7a80a25006701de6f6"></a><!-- doxytag: member="roboptim::ipopt_solver_t" ref="a218d645e29585a7a80a25006701de6f6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00005.html">Solver</a>&lt; DifferentiableFunction, boost::mpl::vector&lt; LinearFunction, DifferentiableFunction &gt; &gt; <a class="el" href="a00021.html#a218d645e29585a7a80a25006701de6f6">roboptim::ipopt_solver_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac10fe741795fcdcb1b58c999936e6e27"></a><!-- doxytag: member="roboptim::solver_ipopt_td_t" ref="ac10fe741795fcdcb1b58c999936e6e27" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00005.html">Solver</a>&lt;TwiceDifferentiableFunction, boost::mpl::vector&lt;LinearFunction, TwiceDifferentiableFunction&gt; &gt; <a class="el" href="a00021.html#ac10fe741795fcdcb1b58c999936e6e27">roboptim::solver_ipopt_td_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
+</div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,8 +138,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-</div>
   <div id="nav-path" class="navpath">
     <ul>
+      <li class="navelem"><a class="el" href="a00021.html">roboptim</a>      </li>
 </body>
 </html>

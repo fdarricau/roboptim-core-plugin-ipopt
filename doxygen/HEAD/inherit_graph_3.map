@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$a00004.html" title="Solver" alt="" coords="5,31,67,62"/>
-<area shape="rect" id="node3" href="$a00002.html" title="roboptim::IpoptSolverCommon\&lt; Solver\&lt; DerivableFunction, boost::mpl::vector\&lt; LinearFunction, DifferentiableFunction \&gt; \&gt; \&gt;" alt="" coords="163,5,920,35"/>
-<area shape="rect" id="node7" href="$a00002.html" title="roboptim::IpoptSolverCommon\&lt; Solver\&lt; TwiceDifferentiableFunction, boost::mpl::vector\&lt; LinearFunction, TwiceDifferentiableFunction \&gt; \&gt; \&gt;" alt="" coords="115,58,968,89"/>
-<area shape="rect" id="node5" href="$a00001.html" title="Ipopt based solver." alt="" coords="1027,5,1173,35"/>
-<area shape="rect" id="node9" href="$a00003.html" title="Ipopt based solver." alt="" coords="1017,58,1183,89"/>
-</map>

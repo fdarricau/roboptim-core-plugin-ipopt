@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::TnlpTd Struct Reference</title>
+<title>roboptim::detail::Tnlp&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -37,7 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -57,58 +57,121 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::TnlpTd Struct Reference</div>  </div>
+<div class="title">roboptim::detail::Tnlp&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::TnlpTd" --><div class="dynheader">
-Collaboration diagram for roboptim::detail::TnlpTd:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00045.png" border="0" usemap="#roboptim_1_1detail_1_1_tnlp_td_coll__map" alt="Collaboration graph"/></div>
-<map name="roboptim_1_1detail_1_1_tnlp_td_coll__map" id="roboptim_1_1detail_1_1_tnlp_td_coll__map">
-<area shape="rect" id="node2" href="a00003.html" title="Ipopt based solver." alt="" coords="1609,9,1775,39"/><area shape="rect" id="node4" href="a00002.html" title="roboptim::IpoptSolverCommon\&lt; Solver\&lt; TwiceDifferentiableFunction, boost::mpl::vector\&lt; LinearFunction, TwiceDifferentiableFunction \&gt; \&gt; \&gt;" alt="" coords="704,9,1557,39"/><area shape="rect" id="node6" href="a00004.html" title="Solver\&lt; TwiceDifferentiableFunction, boost::mpl::vector\&lt; LinearFunction, TwiceDifferentiableFunction \&gt; \&gt;" alt="" coords="5,9,653,39"/></map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<!-- doxytag: class="roboptim::detail::Tnlp" -->
+<p><code>#include &lt;tnlp.hh&gt;</code></p>
 
-<p><a href="a00046.html">List of all members.</a></p>
+<p><a href="a00034.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a17dfdf4e1563fcd62cb45f0b4af3d239">solver_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef SolverState&lt; typename <br class="typebreak"/>
+solver_t::problem_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a2ce196bcb5ccb94f5f60cd965df05c98">solverState_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#af3f49967befb194b03c91190db17ba03">TnlpTd</a> (<a class="el" href="a00003.html">IpoptSolverTd</a> &amp;solver)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ae43934ebb810f74ae064f03bf3e975f2">get_nlp_info</a> (Index &amp;n, Index &amp;m, Index &amp;nnz_jac_g, Index &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a767f7dba2379307512ba2890b7462625">get_bounds_info</a> (Index n, Number *x_l, Number *x_u, Index m, Number *g_l, Number *g_u)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a4f64ea3b3b0fbeb68e09cab5a8c6aa56">get_scaling_parameters</a> (Number &amp;, bool &amp;use_x_scaling, Index n, Number *x_scaling, bool &amp;use_g_scaling, Index m, Number *g_scaling)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a126ab9b3ac485cf162ebcdd5ff16ce33">get_variables_linearity</a> (Index n, LinearityType *var_types)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aff6fa4e0fe5a91d21e0ec7c0eff0cc24">get_function_linearity</a> (Index m, LinearityType *const_types)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a8ced3db8d5a454a199118d0d13e2851c">get_starting_point</a> (Index n, bool init_x, Number *x, bool init_z, Number *z_L, Number *z_U, Index m, bool init_lambda, Number *)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a4196053a2426de38933f38a19abbb64a">get_warm_start_iterate</a> (IteratesVector &amp;)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a400fba0db61d5f45714e21e3946e9b92">eval_f</a> (Index n, const Number *x, bool, Number &amp;obj_value)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a8505ecd5cdb05a6fa55cff1d47db5f74">eval_grad_f</a> (Index n, const Number *x, bool, Number *grad_f)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ab6befdeda5773bbac8fcddfd278533dc">eval_g</a> (Index n, const Number *x, bool, Index m, Number *g)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a023adfb75f952be6ff50e58aa3cb0fc6">eval_jac_g</a> (Index n, const Number *x, bool, Index m, Index, Index *iRow, Index *jCol, Number *values)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac90d18afc87fcacf67778de7bbe37372">compute_hessian</a> (TwiceDifferentiableFunction::hessian_t &amp;h, const IpoptSolverTd::vector_t &amp;x, Number obj_factor, const Number *lambda)  throw ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute <a class="el" href="a00015.html" title="Ipopt classes.">Ipopt</a> hessian from several hessians.  <a href="#ac90d18afc87fcacf67778de7bbe37372"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a88e951c2f656756ec443064632e6f073">eval_h</a> (Index n, const Number *x, bool, Number obj_factor, Index m, const Number *lambda, bool, Index nele_hess, Index *iRow, Index *jCol, Number *values)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a4ffa8d13d191e08ee1fc454726fafcf3">finalize_solution</a> (SolverReturn status, Index n, const Number *x, const Number *, const Number *, Index m, const Number *g, const Number *lambda, Number obj_value, const IpoptData *, IpoptCalculatedQuantities *)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a56a47255b9787a1bb51e1fe2b4cd6693">intermediate_callback</a> (AlgorithmMode, Index, Number, Number, Number, Number, Number, Number, Number, Number, Index, const IpoptData *, IpoptCalculatedQuantities *)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aa20f05a69af2a8ffea9a663c8e46e2c2">get_number_of_nonlinear_variables</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ad5202c7c3d09d18496d0599005bc59d8">get_list_of_nonlinear_variables</a> (Index, Index *)  throw ()</td></tr>
-<tr><td colspan="2"><h2><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00003.html">IpoptSolverTd</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a15b423d2489112bbfe1e078629a3d78e">solver_</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac272980718715c0b89ef23b0718e7ecd">Tnlp</a> (const typename solver_t::problem_t &amp;pb, <a class="el" href="a00006.html#a17dfdf4e1563fcd62cb45f0b4af3d239">solver_t</a> &amp;solver)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Function::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a9c17ca36d4b71eded66d70843372c8d0">constraintsOutputSize</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a4f1d4d9cd4d847b7d1b4777d2f7002d4">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a812583a9af728de731a9edccb82ac3e4">get_bounds_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_l, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_u, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_l, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_u)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a6e13c7854bb7118f5e0876081e1983e6">get_scaling_parameters</a> (<a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> &amp;, bool &amp;use_x_scaling, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_scaling, bool &amp;use_g_scaling, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_scaling)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a662b04c85bfcc01ff0676479328280ea">get_variables_linearity</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, LinearityType *var_types)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a88e1518425f6bef349f3b4b951eb2703">get_function_linearity</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, LinearityType *const_types)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a6a22cfb3c7010d0feffe0eb30963feaf">get_starting_point</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, bool init_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool init_z, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *z_L, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *z_U, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, bool init_lambda, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a50e0ebc88ed1fa82c77befb262d7a2ed">get_warm_start_iterate</a> (Ipopt::IteratesVector &amp;)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a934b67f3c365c8392ec94ddb66788252">eval_f</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> &amp;obj_value)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a51d274afbfad5dd5691e572af8ce0795">eval_grad_f</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *grad_f)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a13ffd6ce87e7a4166dab7dbbd9ebe8fd">eval_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aae05bf6e0d9ac97f85be6eb1b7b60759">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a069b5b7c7b7b3f10da319a6e837acf37">eval_h</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_hess, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a0c437af3e92d595f352251aa55b766c4">finalize_solution</a> (Ipopt::SolverReturn status, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_value, const Ipopt::IpoptData *, Ipopt::IpoptCalculatedQuantities *)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#acb8d599a35ab7b69b677a617bf424898">intermediate_callback</a> (Ipopt::AlgorithmMode, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, const Ipopt::IpoptData *, Ipopt::IpoptCalculatedQuantities *)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a2d8eccf76c272b704f239569a36b0f03">get_number_of_nonlinear_variables</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac8f805392dd08959856f5035678dbf87">get_list_of_nonlinear_variables</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *)  throw ()</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a1c2d9a2034f4f143be617dad27badd2e">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style) throw()</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a3925f9d8df15e510ee42725550101d1a">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(m), <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_jac, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values) throw()</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a1c2d9a2034f4f143be617dad27badd2e">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style) throw()</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a4368469bf357ac74e2eab9b59a0e6221">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_jac, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values) throw()</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a64a7f349086b9fb53f16f9d977682f23">eval_h</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(m), const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(nele_hess), <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values) throw()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aea6c1a7152443b7f0daed6879227761a">compute_hessian</a> (TwiceDifferentiableFunction::hessian_t &amp;h, const typename solver_t::vector_t &amp;x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda)  throw ()</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#afbf42a3971957652a87f772aad8efbc5">compute_hessian</a> (TwiceDifferentiableFunction::hessian_t &amp;h, const solver_t::vector_t &amp;x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda) throw()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static log4cxx::LoggerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a0c2a4802d18191ba3ee12119c6f27bef">logger</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to function logger (see log4cxx documentation).  <a href="#a0c2a4802d18191ba3ee12119c6f27bef"></a><br/></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af3f49967befb194b03c91190db17ba03"></a><!-- doxytag: member="roboptim::detail::TnlpTd::TnlpTd" ref="af3f49967befb194b03c91190db17ba03" args="(IpoptSolverTd &amp;solver)" -->
+<h3>template&lt;typename T&gt;<br/>
+ class roboptim::detail::Tnlp&lt; T &gt;</h3>
+
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a17dfdf4e1563fcd62cb45f0b4af3d239"></a><!-- doxytag: member="roboptim::detail::Tnlp::solver_t" ref="a17dfdf4e1563fcd62cb45f0b4af3d239" args="" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00006.html#af3f49967befb194b03c91190db17ba03">roboptim::detail::TnlpTd::TnlpTd</a> </td>
+          <td class="memname">typedef T <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a17dfdf4e1563fcd62cb45f0b4af3d239">solver_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ce196bcb5ccb94f5f60cd965df05c98"></a><!-- doxytag: member="roboptim::detail::Tnlp::solverState_t" ref="a2ce196bcb5ccb94f5f60cd965df05c98" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef SolverState&lt;typename solver_t::problem_t&gt; <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a2ce196bcb5ccb94f5f60cd965df05c98">solverState_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac272980718715c0b89ef23b0718e7ecd"></a><!-- doxytag: member="roboptim::detail::Tnlp::Tnlp" ref="ac272980718715c0b89ef23b0718e7ecd" args="(const typename solver_t::problem_t &amp;pb, solver_t &amp;solver)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html">Tnlp</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00003.html">IpoptSolverTd</a> &amp;&#160;</td>
-          <td class="paramname"><em>solver</em></td><td>)</td>
-          <td>  throw ()<code> [inline]</code></td>
+          <td class="paramtype">const typename solver_t::problem_t &amp;&#160;</td>
+          <td class="paramname"><em>pb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00006.html#a17dfdf4e1563fcd62cb45f0b4af3d239">solver_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>solver</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()</td>
         </tr>
       </table>
 </div>
@@ -117,12 +180,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ac90d18afc87fcacf67778de7bbe37372"></a><!-- doxytag: member="roboptim::detail::TnlpTd::compute_hessian" ref="ac90d18afc87fcacf67778de7bbe37372" args="(TwiceDifferentiableFunction::hessian_t &amp;h, const IpoptSolverTd::vector_t &amp;x, Number obj_factor, const Number *lambda)" -->
+<a class="anchor" id="aea6c1a7152443b7f0daed6879227761a"></a><!-- doxytag: member="roboptim::detail::Tnlp::compute_hessian" ref="aea6c1a7152443b7f0daed6879227761a" args="(TwiceDifferentiableFunction::hessian_t &amp;h, const typename solver_t::vector_t &amp;x, Number obj_factor, const Number *lambda)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00006.html#ac90d18afc87fcacf67778de7bbe37372">roboptim::detail::TnlpTd::compute_hessian</a> </td>
+          <td class="memname">void <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#aea6c1a7152443b7f0daed6879227761a">compute_hessian</a> </td>
           <td>(</td>
           <td class="paramtype">TwiceDifferentiableFunction::hessian_t &amp;&#160;</td>
           <td class="paramname"><em>h</em>, </td>
@@ -130,66 +195,25 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const IpoptSolverTd::vector_t &amp;&#160;</td>
+          <td class="paramtype">const typename solver_t::vector_t &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname"><em>obj_factor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Number *&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>lambda</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Compute <a class="el" href="a00015.html" title="Ipopt classes.">Ipopt</a> hessian from several hessians. </p>
-
-</div>
-</div>
-<a class="anchor" id="a400fba0db61d5f45714e21e3946e9b92"></a><!-- doxytag: member="roboptim::detail::TnlpTd::eval_f" ref="a400fba0db61d5f45714e21e3946e9b92" args="(Index n, const Number *x, bool, Number &amp;obj_value)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a400fba0db61d5f45714e21e3946e9b92">roboptim::detail::TnlpTd::eval_f</a> </td>
-          <td>(</td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Number *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Number &amp;&#160;</td>
-          <td class="paramname"><em>obj_value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -197,128 +221,239 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab6befdeda5773bbac8fcddfd278533dc"></a><!-- doxytag: member="roboptim::detail::TnlpTd::eval_g" ref="ab6befdeda5773bbac8fcddfd278533dc" args="(Index n, const Number *x, bool, Index m, Number *g)" -->
+<a class="anchor" id="afbf42a3971957652a87f772aad8efbc5"></a><!-- doxytag: member="roboptim::detail::Tnlp::compute_hessian" ref="afbf42a3971957652a87f772aad8efbc5" args="(TwiceDifferentiableFunction::hessian_t &amp;h, const solver_t::vector_t &amp;x, Number obj_factor, const Number *lambda)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#ab6befdeda5773bbac8fcddfd278533dc">roboptim::detail::TnlpTd::eval_g</a> </td>
+          <td class="memname">void <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; <a class="el" href="a00004.html">IpoptSolverTd</a> &gt;::<a class="el" href="a00006.html#aea6c1a7152443b7f0daed6879227761a">compute_hessian</a> </td>
           <td>(</td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
+          <td class="paramtype">TwiceDifferentiableFunction::hessian_t &amp;&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Number *&#160;</td>
+          <td class="paramtype">const solver_t::vector_t &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Number *&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8505ecd5cdb05a6fa55cff1d47db5f74"></a><!-- doxytag: member="roboptim::detail::TnlpTd::eval_grad_f" ref="a8505ecd5cdb05a6fa55cff1d47db5f74" args="(Index n, const Number *x, bool, Number *grad_f)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a8505ecd5cdb05a6fa55cff1d47db5f74">roboptim::detail::TnlpTd::eval_grad_f</a> </td>
-          <td>(</td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Number *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Number *&#160;</td>
-          <td class="paramname"><em>grad_f</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a88e951c2f656756ec443064632e6f073"></a><!-- doxytag: member="roboptim::detail::TnlpTd::eval_h" ref="a88e951c2f656756ec443064632e6f073" args="(Index n, const Number *x, bool, Number obj_factor, Index m, const Number *lambda, bool, Index nele_hess, Index *iRow, Index *jCol, Number *values)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a88e951c2f656756ec443064632e6f073">roboptim::detail::TnlpTd::eval_h</a> </td>
-          <td>(</td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Number *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname"><em>obj_factor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>lambda</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throw()<code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c17ca36d4b71eded66d70843372c8d0"></a><!-- doxytag: member="roboptim::detail::Tnlp::constraintsOutputSize" ref="a9c17ca36d4b71eded66d70843372c8d0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Function::size_type <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a9c17ca36d4b71eded66d70843372c8d0">constraintsOutputSize</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00023.html#af7b8a0724cf3484ec269d606ccc30693">roboptim::detail::computeConstraintsOutputSize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a934b67f3c365c8392ec94ddb66788252"></a><!-- doxytag: member="roboptim::detail::Tnlp::eval_f" ref="a934b67f3c365c8392ec94ddb66788252" args="(Index n, const Number *x, bool new_x, Number &amp;obj_value)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a934b67f3c365c8392ec94ddb66788252">eval_f</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>new_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>obj_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a13ffd6ce87e7a4166dab7dbbd9ebe8fd"></a><!-- doxytag: member="roboptim::detail::Tnlp::eval_g" ref="a13ffd6ce87e7a4166dab7dbbd9ebe8fd" args="(Index n, const Number *x, bool new_x, Index m, Number *g)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a13ffd6ce87e7a4166dab7dbbd9ebe8fd">eval_g</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>new_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Number *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
+
+</div>
+</div>
+<a class="anchor" id="a51d274afbfad5dd5691e572af8ce0795"></a><!-- doxytag: member="roboptim::detail::Tnlp::eval_grad_f" ref="a51d274afbfad5dd5691e572af8ce0795" args="(Index n, const Number *x, bool new_x, Number *grad_f)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a51d274afbfad5dd5691e572af8ce0795">eval_grad_f</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>new_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>grad_f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00023.html#a3c9e7df38bd491822114ae8e533c1afa">roboptim::detail::IpoptCheckGradient()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a069b5b7c7b7b3f10da319a6e837acf37"></a><!-- doxytag: member="roboptim::detail::Tnlp::eval_h" ref="a069b5b7c7b7b3f10da319a6e837acf37" args="(Index n, const Number *x, bool, Number obj_factor, Index m, const Number *lambda, bool, Index nele_hess, Index *iRow, Index *jCol, Number *values)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a069b5b7c7b7b3f10da319a6e837acf37">eval_h</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
+          <td class="paramname"><em>obj_factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>lambda</em>, </td>
         </tr>
         <tr>
@@ -330,31 +465,31 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>nele_hess</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
           <td class="paramname"><em>iRow</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
           <td class="paramname"><em>jCol</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>values</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -362,20 +497,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a023adfb75f952be6ff50e58aa3cb0fc6"></a><!-- doxytag: member="roboptim::detail::TnlpTd::eval_jac_g" ref="a023adfb75f952be6ff50e58aa3cb0fc6" args="(Index n, const Number *x, bool, Index m, Index, Index *iRow, Index *jCol, Number *values)" -->
+<a class="anchor" id="a64a7f349086b9fb53f16f9d977682f23"></a><!-- doxytag: member="roboptim::detail::Tnlp::eval_h" ref="a64a7f349086b9fb53f16f9d977682f23" args="(Index n, const Number *x, bool, Number obj_factor, Index ROBOPTIM_DEBUG_ONLY(m), const Number *lambda, bool, Index ROBOPTIM_DEBUG_ONLY(nele_hess), Index *iRow, Index *jCol, Number *values)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a023adfb75f952be6ff50e58aa3cb0fc6">roboptim::detail::TnlpTd::eval_jac_g</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; <a class="el" href="a00004.html">IpoptSolverTd</a> &gt;::<a class="el" href="a00006.html#a069b5b7c7b7b3f10da319a6e837acf37">eval_h</a> </td>
           <td>(</td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Number *&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -387,173 +524,254 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
+          <td class="paramname"><em>obj_factor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &#160;</td>
+          <td class="paramname"><em>ROBOPTIM_DEBUG_ONLY</em>m, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index *&#160;</td>
-          <td class="paramname"><em>iRow</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Index *&#160;</td>
-          <td class="paramname"><em>jCol</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Number *&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00018.html#a9050ad9de9187d2a9024262bf03fb99a">roboptim::detail::jacobianFromGradients()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4ffa8d13d191e08ee1fc454726fafcf3"></a><!-- doxytag: member="roboptim::detail::TnlpTd::finalize_solution" ref="a4ffa8d13d191e08ee1fc454726fafcf3" args="(SolverReturn status, Index n, const Number *x, const Number *, const Number *, Index m, const Number *g, const Number *lambda, Number obj_value, const IpoptData *, IpoptCalculatedQuantities *)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="a00006.html#a4ffa8d13d191e08ee1fc454726fafcf3">roboptim::detail::TnlpTd::finalize_solution</a> </td>
-          <td>(</td>
-          <td class="paramtype">SolverReturn&#160;</td>
-          <td class="paramname"><em>status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Number *&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Number *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Number *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Index&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Number *&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Number *&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>lambda</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
-          <td class="paramname"><em>obj_value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const IpoptData *&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IpoptCalculatedQuantities *&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &#160;</td>
+          <td class="paramname"><em>ROBOPTIM_DEBUG_ONLY</em>nele_hess, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
+          <td class="paramname"><em>iRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
+          <td class="paramname"><em>jCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td> throw()<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00011.html#a38288747f2e9691834f7b57a057a98d2">FILL_RESULT</a>, <a class="el" href="a00011.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>, <a class="el" href="a00011.html#adbaea363c26f0140966c80122bd19f76">MAP_IPOPT_FATALS</a>, <a class="el" href="a00011.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>, and <a class="el" href="a00011.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a767f7dba2379307512ba2890b7462625"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_bounds_info" ref="a767f7dba2379307512ba2890b7462625" args="(Index n, Number *x_l, Number *x_u, Index m, Number *g_l, Number *g_u)" -->
+<a class="anchor" id="a3925f9d8df15e510ee42725550101d1a"></a><!-- doxytag: member="roboptim::detail::Tnlp::eval_jac_g" ref="a3925f9d8df15e510ee42725550101d1a" args="(Index n, const Number *x, bool, Index ROBOPTIM_DEBUG_ONLY(m), Index nele_jac, Index *iRow, Index *jCol, Number *values)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a767f7dba2379307512ba2890b7462625">roboptim::detail::TnlpTd::get_bounds_info</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; <a class="el" href="a00003.html">IpoptSolverSparse</a> &gt;::<a class="el" href="a00006.html#aae05bf6e0d9ac97f85be6eb1b7b60759">eval_jac_g</a> </td>
           <td>(</td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
-          <td class="paramname"><em>x_l</em>, </td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
-          <td class="paramname"><em>x_u</em>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &#160;</td>
+          <td class="paramname"><em>ROBOPTIM_DEBUG_ONLY</em>m, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>nele_jac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
+          <td class="paramname"><em>iRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
+          <td class="paramname"><em>jCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throw()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00023.html#a3c9e7df38bd491822114ae8e533c1afa">roboptim::detail::IpoptCheckGradient()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae05bf6e0d9ac97f85be6eb1b7b60759"></a><!-- doxytag: member="roboptim::detail::Tnlp::eval_jac_g" ref="aae05bf6e0d9ac97f85be6eb1b7b60759" args="(Index n, const Number *x, bool new_x, Index m, Index, Index *iRow, Index *jCol, Number *values)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#aae05bf6e0d9ac97f85be6eb1b7b60759">eval_jac_g</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>new_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
-          <td class="paramname"><em>g_l</em>, </td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
-          <td class="paramname"><em>g_u</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
+          <td class="paramname"><em>iRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
+          <td class="paramname"><em>jCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00023.html#a3c9e7df38bd491822114ae8e533c1afa">roboptim::detail::IpoptCheckGradient()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4368469bf357ac74e2eab9b59a0e6221"></a><!-- doxytag: member="roboptim::detail::Tnlp::eval_jac_g" ref="a4368469bf357ac74e2eab9b59a0e6221" args="(Index n, const Number *x, bool, Index m, Index nele_jac, Index *iRow, Index *jCol, Number *values)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; <a class="el" href="a00003.html">IpoptSolverSparse</a> &gt;::<a class="el" href="a00006.html#aae05bf6e0d9ac97f85be6eb1b7b60759">eval_jac_g</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>nele_jac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
+          <td class="paramname"><em>iRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
+          <td class="paramname"><em>jCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throw()</td>
         </tr>
       </table>
 </div>
@@ -561,14 +779,154 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aff6fa4e0fe5a91d21e0ec7c0eff0cc24"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_function_linearity" ref="aff6fa4e0fe5a91d21e0ec7c0eff0cc24" args="(Index m, LinearityType *const_types)" -->
+<a class="anchor" id="a0c437af3e92d595f352251aa55b766c4"></a><!-- doxytag: member="roboptim::detail::Tnlp::finalize_solution" ref="a0c437af3e92d595f352251aa55b766c4" args="(Ipopt::SolverReturn status, Index n, const Number *x, const Number *, const Number *, Index m, const Number *g, const Number *lambda, Number obj_value, const Ipopt::IpoptData *, Ipopt::IpoptCalculatedQuantities *)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#aff6fa4e0fe5a91d21e0ec7c0eff0cc24">roboptim::detail::TnlpTd::get_function_linearity</a> </td>
+          <td class="memname">void <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a0c437af3e92d595f352251aa55b766c4">finalize_solution</a> </td>
           <td>(</td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype">Ipopt::SolverReturn&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>lambda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
+          <td class="paramname"><em>obj_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Ipopt::IpoptData *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Ipopt::IpoptCalculatedQuantities *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00019.html#a38288747f2e9691834f7b57a057a98d2">FILL_RESULT</a>, <a class="el" href="a00019.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>, <a class="el" href="a00019.html#adbaea363c26f0140966c80122bd19f76">MAP_IPOPT_FATALS</a>, <a class="el" href="a00019.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>, and <a class="el" href="a00019.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a812583a9af728de731a9edccb82ac3e4"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_bounds_info" ref="a812583a9af728de731a9edccb82ac3e4" args="(Index n, Number *x_l, Number *x_u, Index m, Number *g_l, Number *g_u)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a812583a9af728de731a9edccb82ac3e4">get_bounds_info</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>x_u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>g_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
+          <td class="paramname"><em>g_u</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88e1518425f6bef349f3b4b951eb2703"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_function_linearity" ref="a88e1518425f6bef349f3b4b951eb2703" args="(Index m, LinearityType *const_types)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a88e1518425f6bef349f3b4b951eb2703">get_function_linearity</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
@@ -580,7 +938,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -588,26 +946,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad5202c7c3d09d18496d0599005bc59d8"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_list_of_nonlinear_variables" ref="ad5202c7c3d09d18496d0599005bc59d8" args="(Index, Index *)" -->
+<a class="anchor" id="ac8f805392dd08959856f5035678dbf87"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_list_of_nonlinear_variables" ref="ac8f805392dd08959856f5035678dbf87" args="(Index, Index *)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#ad5202c7c3d09d18496d0599005bc59d8">roboptim::detail::TnlpTd::get_list_of_nonlinear_variables</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#ac8f805392dd08959856f5035678dbf87">get_list_of_nonlinear_variables</a> </td>
           <td>(</td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -615,32 +975,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae43934ebb810f74ae064f03bf3e975f2"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_nlp_info" ref="ae43934ebb810f74ae064f03bf3e975f2" args="(Index &amp;n, Index &amp;m, Index &amp;nnz_jac_g, Index &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)" -->
+<a class="anchor" id="a1c2d9a2034f4f143be617dad27badd2e"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_nlp_info" ref="a1c2d9a2034f4f143be617dad27badd2e" args="(Index &amp;n, Index &amp;m, Index &amp;nnz_jac_g, Index &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#ae43934ebb810f74ae064f03bf3e975f2">roboptim::detail::TnlpTd::get_nlp_info</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; <a class="el" href="a00003.html">IpoptSolverSparse</a> &gt;::<a class="el" href="a00006.html#a4f1d4d9cd4d847b7d1b4777d2f7002d4">get_nlp_info</a> </td>
           <td>(</td>
-          <td class="paramtype">Index &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
           <td class="paramname"><em>nnz_jac_g</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
           <td class="paramname"><em>nnz_h_lag</em>, </td>
         </tr>
         <tr>
@@ -652,7 +1014,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td> throw()</td>
         </tr>
       </table>
 </div>
@@ -660,15 +1022,111 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa20f05a69af2a8ffea9a663c8e46e2c2"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_number_of_nonlinear_variables" ref="aa20f05a69af2a8ffea9a663c8e46e2c2" args="()" -->
+<a class="anchor" id="a4f1d4d9cd4d847b7d1b4777d2f7002d4"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_nlp_info" ref="a4f1d4d9cd4d847b7d1b4777d2f7002d4" args="(Index &amp;n, Index &amp;m, Index &amp;nnz_jac_g, Index &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual Index <a class="el" href="a00006.html#aa20f05a69af2a8ffea9a663c8e46e2c2">roboptim::detail::TnlpTd::get_number_of_nonlinear_variables</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a4f1d4d9cd4d847b7d1b4777d2f7002d4">get_nlp_info</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>nnz_jac_g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>nnz_h_lag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TNLP::IndexStyleEnum &amp;&#160;</td>
+          <td class="paramname"><em>index_style</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c2d9a2034f4f143be617dad27badd2e"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_nlp_info" ref="a1c2d9a2034f4f143be617dad27badd2e" args="(Index &amp;n, Index &amp;m, Index &amp;nnz_jac_g, Index &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; <a class="el" href="a00003.html">IpoptSolverSparse</a> &gt;::<a class="el" href="a00006.html#a4f1d4d9cd4d847b7d1b4777d2f7002d4">get_nlp_info</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>nnz_jac_g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>nnz_h_lag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TNLP::IndexStyleEnum &amp;&#160;</td>
+          <td class="paramname"><em>index_style</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throw()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d8eccf76c272b704f239569a36b0f03"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_number_of_nonlinear_variables" ref="a2d8eccf76c272b704f239569a36b0f03" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a2d8eccf76c272b704f239569a36b0f03">get_number_of_nonlinear_variables</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [inline, virtual]</code></td>
+          <td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -676,14 +1134,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4f64ea3b3b0fbeb68e09cab5a8c6aa56"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_scaling_parameters" ref="a4f64ea3b3b0fbeb68e09cab5a8c6aa56" args="(Number &amp;, bool &amp;use_x_scaling, Index n, Number *x_scaling, bool &amp;use_g_scaling, Index m, Number *g_scaling)" -->
+<a class="anchor" id="a6e13c7854bb7118f5e0876081e1983e6"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_scaling_parameters" ref="a6e13c7854bb7118f5e0876081e1983e6" args="(Number &amp;, bool &amp;use_x_scaling, Index n, Number *x_scaling, bool &amp;use_g_scaling, Index m, Number *g_scaling)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a4f64ea3b3b0fbeb68e09cab5a8c6aa56">roboptim::detail::TnlpTd::get_scaling_parameters</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a6e13c7854bb7118f5e0876081e1983e6">get_scaling_parameters</a> </td>
           <td>(</td>
-          <td class="paramtype">Number &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -695,13 +1155,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>x_scaling</em>, </td>
         </tr>
         <tr>
@@ -713,19 +1173,19 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>g_scaling</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -733,14 +1193,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8ced3db8d5a454a199118d0d13e2851c"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_starting_point" ref="a8ced3db8d5a454a199118d0d13e2851c" args="(Index n, bool init_x, Number *x, bool init_z, Number *z_L, Number *z_U, Index m, bool init_lambda, Number *)" -->
+<a class="anchor" id="a6a22cfb3c7010d0feffe0eb30963feaf"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_starting_point" ref="a6a22cfb3c7010d0feffe0eb30963feaf" args="(Index n, bool init_x, Number *x, bool init_z, Number *z_L, Number *z_U, Index m, bool init_lambda, Number *)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a8ced3db8d5a454a199118d0d13e2851c">roboptim::detail::TnlpTd::get_starting_point</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a6a22cfb3c7010d0feffe0eb30963feaf">get_starting_point</a> </td>
           <td>(</td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -752,7 +1214,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -764,19 +1226,19 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>z_L</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname"><em>z_U</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
@@ -788,13 +1250,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number *&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -802,14 +1264,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a126ab9b3ac485cf162ebcdd5ff16ce33"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_variables_linearity" ref="a126ab9b3ac485cf162ebcdd5ff16ce33" args="(Index n, LinearityType *var_types)" -->
+<a class="anchor" id="a662b04c85bfcc01ff0676479328280ea"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_variables_linearity" ref="a662b04c85bfcc01ff0676479328280ea" args="(Index n, LinearityType *var_types)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a126ab9b3ac485cf162ebcdd5ff16ce33">roboptim::detail::TnlpTd::get_variables_linearity</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a662b04c85bfcc01ff0676479328280ea">get_variables_linearity</a> </td>
           <td>(</td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -821,7 +1285,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -829,16 +1293,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4196053a2426de38933f38a19abbb64a"></a><!-- doxytag: member="roboptim::detail::TnlpTd::get_warm_start_iterate" ref="a4196053a2426de38933f38a19abbb64a" args="(IteratesVector &amp;)" -->
+<a class="anchor" id="a50e0ebc88ed1fa82c77befb262d7a2ed"></a><!-- doxytag: member="roboptim::detail::Tnlp::get_warm_start_iterate" ref="a50e0ebc88ed1fa82c77befb262d7a2ed" args="(Ipopt::IteratesVector &amp;)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a4196053a2426de38933f38a19abbb64a">roboptim::detail::TnlpTd::get_warm_start_iterate</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a50e0ebc88ed1fa82c77befb262d7a2ed">get_warm_start_iterate</a> </td>
           <td>(</td>
-          <td class="paramtype">IteratesVector &amp;&#160;</td>
+          <td class="paramtype">Ipopt::IteratesVector &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [inline, virtual]</code></td>
+          <td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -846,92 +1312,94 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a56a47255b9787a1bb51e1fe2b4cd6693"></a><!-- doxytag: member="roboptim::detail::TnlpTd::intermediate_callback" ref="a56a47255b9787a1bb51e1fe2b4cd6693" args="(AlgorithmMode, Index, Number, Number, Number, Number, Number, Number, Number, Number, Index, const IpoptData *, IpoptCalculatedQuantities *)" -->
+<a class="anchor" id="acb8d599a35ab7b69b677a617bf424898"></a><!-- doxytag: member="roboptim::detail::Tnlp::intermediate_callback" ref="acb8d599a35ab7b69b677a617bf424898" args="(Ipopt::AlgorithmMode, Index, Number, Number, Number, Number, Number, Number, Number, Number, Index, const Ipopt::IpoptData *, Ipopt::IpoptCalculatedQuantities *)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="a00006.html#a56a47255b9787a1bb51e1fe2b4cd6693">roboptim::detail::TnlpTd::intermediate_callback</a> </td>
+          <td class="memname">bool <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#acb8d599a35ab7b69b677a617bf424898">intermediate_callback</a> </td>
           <td>(</td>
-          <td class="paramtype">AlgorithmMode&#160;</td>
+          <td class="paramtype">Ipopt::AlgorithmMode&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Number&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Index&#160;</td>
+          <td class="paramtype"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const IpoptData *&#160;</td>
+          <td class="paramtype">const Ipopt::IpoptData *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IpoptCalculatedQuantities *&#160;</td>
+          <td class="paramtype">Ipopt::IpoptCalculatedQuantities *&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, virtual]</code></td>
+          <td></td><td>  throw ()<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -940,16 +1408,20 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a15b423d2489112bbfe1e078629a3d78e"></a><!-- doxytag: member="roboptim::detail::TnlpTd::solver_" ref="a15b423d2489112bbfe1e078629a3d78e" args="" -->
+<a class="anchor" id="a0c2a4802d18191ba3ee12119c6f27bef"></a><!-- doxytag: member="roboptim::detail::Tnlp::logger" ref="a0c2a4802d18191ba3ee12119c6f27bef" args="" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00003.html">IpoptSolverTd</a>&amp; <a class="el" href="a00006.html#a15b423d2489112bbfe1e078629a3d78e">roboptim::detail::TnlpTd::solver_</a></td>
+          <td class="memname">log4cxx::LoggerPtr <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a0c2a4802d18191ba3ee12119c6f27bef">logger</a><code> [static, protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Pointer to function logger (see log4cxx documentation). </p>
 
 </div>
 </div>
@@ -971,8 +1443,8 @@ Public Attributes</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00016.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00018.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00006.html">TnlpTd</a>      </li>
+      <li class="navelem"><a class="el" href="a00021.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00023.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00006.html">Tnlp</a>      </li>
 </body>
 </html>
