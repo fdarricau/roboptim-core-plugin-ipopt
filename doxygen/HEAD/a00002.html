@@ -86,16 +86,16 @@ Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef T::problem_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a657d8b77b25eb0db371991b14a4f8e84">problem_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a9cfffe1de75141c7bfa992ab5e477e8b">IpoptSolverCommon</a> (const <a class="el" href="a00002.html#a657d8b77b25eb0db371991b14a4f8e84">problem_t</a> &amp;pb, Ipopt::SmartPtr&lt; Ipopt::TNLP &gt; tnlp)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a9cfffe1de75141c7bfa992ab5e477e8b">IpoptSolverCommon</a> (const <a class="el" href="a00002.html#a657d8b77b25eb0db371991b14a4f8e84">problem_t</a> &amp;pb, Ipopt::SmartPtr&lt; Ipopt::TNLP &gt; tnlp)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate the solver from a problem.  <a href="#a9cfffe1de75141c7bfa992ab5e477e8b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#ad5e70946ac9a4c3e5e960d5852f1401a">~IpoptSolverCommon</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a070a25a8f1f2f6cb39ce04c7c220730f">solve</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#ad5e70946ac9a4c3e5e960d5852f1401a">~IpoptSolverCommon</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a070a25a8f1f2f6cb39ce04c7c220730f">solve</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the problem.  <a href="#a070a25a8f1f2f6cb39ce04c7c220730f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual Ipopt::SmartPtr<br class="typebreak"/>
-&lt; Ipopt::IpoptApplication &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a99987dee07ae832d4cdcdeb552f29a2a">getIpoptApplication</a> ()  throw ()</td></tr>
+&lt; Ipopt::IpoptApplication &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a99987dee07ae832d4cdcdeb552f29a2a">getIpoptApplication</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="a00020.html" title="Ipopt classes.">Ipopt</a> Application object for <a class="el" href="a00020.html" title="Ipopt classes.">Ipopt</a> specific tuning.  <a href="#a99987dee07ae832d4cdcdeb552f29a2a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a13c848b4c83572af25e858ed8cbb659b">setIterationCallback</a> (<a class="el" href="a00002.html#a55d77324640a4d4d40e64cfab68066b7">callback_t</a> <a class="el" href="a00002.html#aaab2d4c528e8cae385a2f52f53472d10">callback</a>)  throw (std::runtime_error)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00002.html#a55d77324640a4d4d40e64cfab68066b7">callback_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#aaab2d4c528e8cae385a2f52f53472d10">callback</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#a13c848b4c83572af25e858ed8cbb659b">setIterationCallback</a> (<a class="el" href="a00002.html#a55d77324640a4d4d40e64cfab68066b7">callback_t</a> <a class="el" href="a00002.html#aaab2d4c528e8cae385a2f52f53472d10">callback</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00002.html#a55d77324640a4d4d40e64cfab68066b7">callback_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00002.html#aaab2d4c528e8cae385a2f52f53472d10">callback</a> () const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -205,7 +205,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [explicit]</code></td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -214,7 +214,8 @@ template&lt;typename T &gt; </div>
 <p>Instantiate the solver from a problem. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">problem</td><td>problem that will be solved </td></tr>
+    <tr><td class="paramname">pb</td><td>problem that will be solved. </td></tr>
+    <tr><td class="paramname">tnlp</td><td>pointer to <a class="el" href="a00020.html" title="Ipopt classes.">Ipopt</a> solver. </td></tr>
   </table>
   </dd>
 </dl>
@@ -231,7 +232,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00002.html">roboptim::IpoptSolverCommon</a>&lt; T &gt;::~<a class="el" href="a00002.html">IpoptSolverCommon</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -250,7 +251,7 @@ template&lt;typename T&gt; </div>
           <td class="memname">const <a class="el" href="a00002.html#a55d77324640a4d4d40e64cfab68066b7">callback_t</a>&amp; <a class="el" href="a00002.html">roboptim::IpoptSolverCommon</a>&lt; T &gt;::<a class="el" href="a00002.html#aaab2d4c528e8cae385a2f52f53472d10">callback</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const  throw ()<code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -270,7 +271,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">Ipopt::SmartPtr&lt; Ipopt::IpoptApplication &gt; <a class="el" href="a00002.html">roboptim::IpoptSolverCommon</a>&lt; T &gt;::<a class="el" href="a00002.html#a99987dee07ae832d4cdcdeb552f29a2a">getIpoptApplication</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -292,7 +293,7 @@ template&lt;typename T&gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00002.html#a55d77324640a4d4d40e64cfab68066b7">callback_t</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
-          <td>  throw (std::runtime_error)<code> [inline, virtual]</code></td>
+          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -310,7 +311,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void <a class="el" href="a00002.html">roboptim::IpoptSolverCommon</a>&lt; T &gt;::<a class="el" href="a00002.html#a070a25a8f1f2f6cb39ce04c7c220730f">solve</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>

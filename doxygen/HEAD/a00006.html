@@ -77,39 +77,39 @@ Public Types</h2></td></tr>
 solver_t::problem_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a2ce196bcb5ccb94f5f60cd965df05c98">solverState_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac272980718715c0b89ef23b0718e7ecd">Tnlp</a> (const typename solver_t::problem_t &amp;pb, <a class="el" href="a00006.html#a17dfdf4e1563fcd62cb45f0b4af3d239">solver_t</a> &amp;solver)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac272980718715c0b89ef23b0718e7ecd">Tnlp</a> (const typename solver_t::problem_t &amp;pb, <a class="el" href="a00006.html#a17dfdf4e1563fcd62cb45f0b4af3d239">solver_t</a> &amp;solver)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">Function::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a9c17ca36d4b71eded66d70843372c8d0">constraintsOutputSize</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a4f1d4d9cd4d847b7d1b4777d2f7002d4">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a812583a9af728de731a9edccb82ac3e4">get_bounds_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_l, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_u, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_l, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_u)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a6e13c7854bb7118f5e0876081e1983e6">get_scaling_parameters</a> (<a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> &amp;, bool &amp;use_x_scaling, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_scaling, bool &amp;use_g_scaling, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_scaling)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a662b04c85bfcc01ff0676479328280ea">get_variables_linearity</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, LinearityType *var_types)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a88e1518425f6bef349f3b4b951eb2703">get_function_linearity</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, LinearityType *const_types)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a6a22cfb3c7010d0feffe0eb30963feaf">get_starting_point</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, bool init_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool init_z, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *z_L, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *z_U, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, bool init_lambda, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a50e0ebc88ed1fa82c77befb262d7a2ed">get_warm_start_iterate</a> (Ipopt::IteratesVector &amp;)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a934b67f3c365c8392ec94ddb66788252">eval_f</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> &amp;obj_value)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a51d274afbfad5dd5691e572af8ce0795">eval_grad_f</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *grad_f)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a13ffd6ce87e7a4166dab7dbbd9ebe8fd">eval_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aae05bf6e0d9ac97f85be6eb1b7b60759">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a069b5b7c7b7b3f10da319a6e837acf37">eval_h</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_hess, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a0c437af3e92d595f352251aa55b766c4">finalize_solution</a> (Ipopt::SolverReturn status, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_value, const Ipopt::IpoptData *, Ipopt::IpoptCalculatedQuantities *)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#acb8d599a35ab7b69b677a617bf424898">intermediate_callback</a> (Ipopt::AlgorithmMode, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, const Ipopt::IpoptData *, Ipopt::IpoptCalculatedQuantities *)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a2d8eccf76c272b704f239569a36b0f03">get_number_of_nonlinear_variables</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac8f805392dd08959856f5035678dbf87">get_list_of_nonlinear_variables</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a4f1d4d9cd4d847b7d1b4777d2f7002d4">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a812583a9af728de731a9edccb82ac3e4">get_bounds_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_l, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_u, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_l, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_u)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a6e13c7854bb7118f5e0876081e1983e6">get_scaling_parameters</a> (<a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> &amp;, bool &amp;use_x_scaling, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x_scaling, bool &amp;use_g_scaling, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g_scaling)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a662b04c85bfcc01ff0676479328280ea">get_variables_linearity</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, LinearityType *var_types)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a88e1518425f6bef349f3b4b951eb2703">get_function_linearity</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, LinearityType *const_types)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a6a22cfb3c7010d0feffe0eb30963feaf">get_starting_point</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, bool init_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool init_z, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *z_L, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *z_U, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, bool init_lambda, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a50e0ebc88ed1fa82c77befb262d7a2ed">get_warm_start_iterate</a> (Ipopt::IteratesVector &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a934b67f3c365c8392ec94ddb66788252">eval_f</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> &amp;obj_value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a51d274afbfad5dd5691e572af8ce0795">eval_grad_f</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *grad_f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a13ffd6ce87e7a4166dab7dbbd9ebe8fd">eval_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aae05bf6e0d9ac97f85be6eb1b7b60759">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool new_x, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a069b5b7c7b7b3f10da319a6e837acf37">eval_h</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_hess, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a0c437af3e92d595f352251aa55b766c4">finalize_solution</a> (Ipopt::SolverReturn status, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *g, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_value, const Ipopt::IpoptData *, Ipopt::IpoptCalculatedQuantities *)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#acb8d599a35ab7b69b677a617bf424898">intermediate_callback</a> (Ipopt::AlgorithmMode, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, const Ipopt::IpoptData *, Ipopt::IpoptCalculatedQuantities *)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a2d8eccf76c272b704f239569a36b0f03">get_number_of_nonlinear_variables</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#ac8f805392dd08959856f5035678dbf87">get_list_of_nonlinear_variables</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a>, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a1c2d9a2034f4f143be617dad27badd2e">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style) throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a1c2d9a2034f4f143be617dad27badd2e">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a3925f9d8df15e510ee42725550101d1a">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(m), <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_jac, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values) throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a3925f9d8df15e510ee42725550101d1a">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(m), <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_jac, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a1c2d9a2034f4f143be617dad27badd2e">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style) throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a1c2d9a2034f4f143be617dad27badd2e">get_nlp_info</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;n, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_jac_g, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> &amp;nnz_h_lag, TNLP::IndexStyleEnum &amp;index_style)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a4368469bf357ac74e2eab9b59a0e6221">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_jac, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values) throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a4368469bf357ac74e2eab9b59a0e6221">eval_jac_g</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> m, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> nele_jac, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a64a7f349086b9fb53f16f9d977682f23">eval_h</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(m), const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(nele_hess), <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values) throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#a64a7f349086b9fb53f16f9d977682f23">eval_h</a> (<a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> n, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *x, bool, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(m), const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda, bool, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> ROBOPTIM_DEBUG_ONLY(nele_hess), <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *iRow, <a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> *jCol, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *values)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aea6c1a7152443b7f0daed6879227761a">compute_hessian</a> (TwiceDifferentiableFunction::hessian_t &amp;h, const typename solver_t::vector_t &amp;x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#aea6c1a7152443b7f0daed6879227761a">compute_hessian</a> (TwiceDifferentiableFunction::hessian_t &amp;h, const typename solver_t::vector_t &amp;x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#afbf42a3971957652a87f772aad8efbc5">compute_hessian</a> (TwiceDifferentiableFunction::hessian_t &amp;h, const solver_t::vector_t &amp;x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda) throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00006.html#afbf42a3971957652a87f772aad8efbc5">compute_hessian</a> (TwiceDifferentiableFunction::hessian_t &amp;h, const solver_t::vector_t &amp;x, <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> obj_factor, const <a class="el" href="a00023.html#ac19e2aa1837e843d035e417f297d7ab1">Number</a> *lambda)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static log4cxx::LoggerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00006.html#a0c2a4802d18191ba3ee12119c6f27bef">logger</a></td></tr>
@@ -171,7 +171,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -213,7 +213,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [protected]</code></td>
+          <td></td><td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -254,7 +254,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throw()<code> [inline, protected]</code></td>
+          <td></td><td><code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -315,7 +315,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -362,7 +362,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -404,7 +404,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -489,7 +489,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -572,7 +572,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throw()<code> [inline]</code></td>
+          <td></td><td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -637,7 +637,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throw()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -704,7 +704,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -771,7 +771,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throw()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -854,7 +854,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -909,7 +909,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -938,7 +938,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -967,7 +967,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1014,7 +1014,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throw()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -1061,7 +1061,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1108,7 +1108,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> throw()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -1126,7 +1126,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00023.html#aede07d061514d52d91862e1cae6c1bb1">Index</a> <a class="el" href="a00006.html">roboptim::detail::Tnlp</a>&lt; T &gt;::<a class="el" href="a00006.html#a2d8eccf76c272b704f239569a36b0f03">get_number_of_nonlinear_variables</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1185,7 +1185,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1256,7 +1256,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1285,7 +1285,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1304,7 +1304,7 @@ template&lt;typename T &gt; </div>
           <td>(</td>
           <td class="paramtype">Ipopt::IteratesVector &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1399,7 +1399,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [virtual]</code></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
