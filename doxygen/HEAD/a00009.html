@@ -81,7 +81,7 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>(NAME)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#ad57f309ea13a81247101f0b2c82773b3">SWITCH_OK</a>(NAME, CASES)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(MACRO)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#adbaea363c26f0140966c80122bd19f76">MAP_IPOPT_FATALS</a>(MACRO)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#adbaea363c26f0140966c80122bd19f76">MAP_IPOPT_FATALS</a>(MACRO)&#160;&#160;&#160;MACRO(Ipopt::NonIpopt_Exception_Thrown)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#aaefe624accdc8e7371d2d1e1096f4278">MAP_IPOPT_OKS</a>(MACRO)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00009.html#acb2c4af27cae03e62f4c943fb377b5a3">DEFINE_PARAMETER</a>(KEY, DESCRIPTION, VALUE)</td></tr>
 </table>
@@ -183,14 +183,12 @@ Defines</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">MACRO</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;MACRO(Ipopt::NonIpopt_Exception_Thrown)</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">MACRO(Ipopt::User_Requested_Stop);    \
-  MACRO(Ipopt::NonIpopt_Exception_Thrown)
-</pre></div>
+
 <p>Referenced by <a class="el" href="a00002.html#a070a25a8f1f2f6cb39ce04c7c220730f">roboptim::IpoptSolverCommon&lt; T &gt;::solve()</a>.</p>
 
 </div>
@@ -211,9 +209,11 @@ Defines</h2></td></tr>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment">MACRO (Ipopt::Solve_Succeeded, <a class="code" href="a00009.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(<a class="code" href="a00009.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>);  \
    MAP_IPOPT_FATALS(<a class="code" href="a00009.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>));       \
-  MACRO (Ipopt::Solved_To_Acceptable_Level,<a class="code" href="a00009.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(<a class="code" href="a00009.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>); \
+  MACRO (Ipopt::Solved_To_Acceptable_Level, <a class="code" href="a00009.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(<a class="code" href="a00009.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>); \
    MAP_IPOPT_FATALS(<a class="code" href="a00009.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>));       \
-  MACRO (Ipopt::Feasible_Point_Found,<a class="code" href="a00009.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(<a class="code" href="a00009.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>);  \
+  MACRO (Ipopt::Feasible_Point_Found, <a class="code" href="a00009.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(<a class="code" href="a00009.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>); \
+   MAP_IPOPT_FATALS(<a class="code" href="a00009.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>));       \
+  MACRO (Ipopt::User_Requested_Stop, <a class="code" href="a00009.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(<a class="code" href="a00009.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>);  \
    MAP_IPOPT_FATALS(<a class="code" href="a00009.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>))
 </pre></div>
 <p>Referenced by <a class="el" href="a00002.html#a070a25a8f1f2f6cb39ce04c7c220730f">roboptim::IpoptSolverCommon&lt; T &gt;::solve()</a>.</p>
