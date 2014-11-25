@@ -84,9 +84,9 @@ Namespaces</h2></td></tr>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a38288747f2e9691834f7b57a057a98d2">FILL_RESULT</a>()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ac2223e7c9508ceda166a6162f34139cd">SWITCH_ERROR</a>(NAME, ERROR)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a>(NAME)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#ab55140c343d0af12e763339e955a3a9c">SWITCH_WARNING</a>(NAME, WARNING)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a25022b885198970781b6c6205b562bc3">MAP_IPOPT_ERRORS</a>(MACRO)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#adbaea363c26f0140966c80122bd19f76">MAP_IPOPT_FATALS</a>(MACRO)&#160;&#160;&#160;MACRO(USER_REQUESTED_STOP)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00019.html#a0bf7be6a69e085fe1d2f245f505f7abd">MAP_IPOPT_WARNINGS</a>(MACRO)</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T , typename F &gt; </td></tr>
@@ -151,27 +151,29 @@ Functions</h2></td></tr>
     MACRO(TOO_FEW_DEGREES_OF_FREEDOM, <span class="stringliteral">&quot;Two few degrees of freedom&quot;</span>);  \
     MACRO(INVALID_OPTION, <span class="stringliteral">&quot;Invalid option&quot;</span>);        \
     MACRO(OUT_OF_MEMORY, <span class="stringliteral">&quot;Out of memory&quot;</span>);        \
-    MACRO(CPUTIME_EXCEEDED, <span class="stringliteral">&quot;Cpu time exceeded&quot;</span>)
+    MACRO(CPUTIME_EXCEEDED, <span class="stringliteral">&quot;CPU time exceeded&quot;</span>)
 </pre></div>
 <p>Referenced by <a class="el" href="a00006.html#a0c437af3e92d595f352251aa55b766c4">roboptim::detail::Tnlp&lt; T &gt;::finalize_solution()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adbaea363c26f0140966c80122bd19f76"></a><!-- doxytag: member="tnlp.hxx::MAP_IPOPT_FATALS" ref="adbaea363c26f0140966c80122bd19f76" args="(MACRO)" -->
+<a class="anchor" id="a0bf7be6a69e085fe1d2f245f505f7abd"></a><!-- doxytag: member="tnlp.hxx::MAP_IPOPT_WARNINGS" ref="a0bf7be6a69e085fe1d2f245f505f7abd" args="(MACRO)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="a00019.html#adbaea363c26f0140966c80122bd19f76">MAP_IPOPT_FATALS</a></td>
+          <td class="memname">#define <a class="el" href="a00019.html#a0bf7be6a69e085fe1d2f245f505f7abd">MAP_IPOPT_WARNINGS</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">MACRO</td><td>)</td>
-          <td>&#160;&#160;&#160;MACRO(USER_REQUESTED_STOP)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
+<b>Value:</b><div class="fragment"><pre class="fragment">MACRO(USER_REQUESTED_STOP, <span class="stringliteral">&quot;User-requested stop&quot;</span>);  \
+    MACRO(STOP_AT_ACCEPTABLE_POINT, <span class="stringliteral">&quot;Acceptable point&quot;</span>)
+</pre></div>
 <p>Referenced by <a class="el" href="a00006.html#a0c437af3e92d595f352251aa55b766c4">roboptim::detail::Tnlp&lt; T &gt;::finalize_solution()</a>.</p>
 
 </div>
@@ -212,22 +214,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7ed14599ccccd201b8d44cb8b70652c3"></a><!-- doxytag: member="tnlp.hxx::SWITCH_FATAL" ref="a7ed14599ccccd201b8d44cb8b70652c3" args="(NAME)" -->
+<a class="anchor" id="ab55140c343d0af12e763339e955a3a9c"></a><!-- doxytag: member="tnlp.hxx::SWITCH_WARNING" ref="ab55140c343d0af12e763339e955a3a9c" args="(NAME, WARNING)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="a00019.html#a7ed14599ccccd201b8d44cb8b70652c3">SWITCH_FATAL</a></td>
+          <td class="memname">#define <a class="el" href="a00019.html#ab55140c343d0af12e763339e955a3a9c">SWITCH_WARNING</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME</td><td>)</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">WARNING&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">case</span> NAME:                                  \
-    assert (0);                                 \
+<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">case</span> NAME:                                          \
+    {                                                   \
+      ResultWithWarnings res (n, 1);      \
+      FILL_RESULT ();         \
+      res.warnings.push_back (SolverWarning (WARNING)); \
+      solver_.result_ = res;        \
+      break;            \
+    }                                                   \
     break
 </pre></div>
 <p>Referenced by <a class="el" href="a00006.html#a0c437af3e92d595f352251aa55b766c4">roboptim::detail::Tnlp&lt; T &gt;::finalize_solution()</a>.</p>
