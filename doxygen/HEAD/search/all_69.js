@@ -15,15 +15,16 @@ var searchData=
   ['ipopt_5fdefault_5flinear_5fsolver',['IPOPT_DEFAULT_LINEAR_SOLVER',['../a00009.html#ace87303d4b8363dff75d85b45f57800f',1,'ipopt-common.hxx']]],
   ['ipopt_5fsolver_5ft',['ipopt_solver_t',['../a00021.html#a218d645e29585a7a80a25006701de6f6',1,'roboptim']]],
   ['ipoptcheckgradient',['IpoptCheckGradient',['../a00023.html#a3c9e7df38bd491822114ae8e533c1afa',1,'roboptim::detail']]],
+  ['ipoptmatrix_5ft',['ipoptMatrix_t',['../a00006.html#ae09798c861ec8a2046879beb1d8898da',1,'roboptim::detail::Tnlp']]],
   ['ipoptsolver',['IpoptSolver',['../a00001.html',1,'roboptim']]],
   ['ipoptsolver',['IpoptSolver',['../a00001.html#a00dcb877508f20030911ca9873c6f72b',1,'roboptim::IpoptSolver']]],
-  ['ipoptsolvercommon',['IpoptSolverCommon',['../a00002.html#a9cfffe1de75141c7bfa992ab5e477e8b',1,'roboptim::IpoptSolverCommon']]],
   ['ipoptsolvercommon',['IpoptSolverCommon',['../a00002.html',1,'roboptim']]],
+  ['ipoptsolvercommon',['IpoptSolverCommon',['../a00002.html#a9cfffe1de75141c7bfa992ab5e477e8b',1,'roboptim::IpoptSolverCommon']]],
   ['ipoptsolvercommon_3c_20solver_3c_20differentiablefunction_2c_20boost_3a_3ampl_3a_3avector_3c_20linearfunction_2c_20differentiablefunction_20_3e_20_3e_20_3e',['IpoptSolverCommon< Solver< DifferentiableFunction, boost::mpl::vector< LinearFunction, DifferentiableFunction > > >',['../a00002.html',1,'roboptim']]],
   ['ipoptsolvercommon_3c_20solver_3c_20differentiablesparsefunction_2c_20boost_3a_3ampl_3a_3avector_3c_20linearsparsefunction_2c_20differentiablesparsefunction_20_3e_20_3e_20_3e',['IpoptSolverCommon< Solver< DifferentiableSparseFunction, boost::mpl::vector< LinearSparseFunction, DifferentiableSparseFunction > > >',['../a00002.html',1,'roboptim']]],
   ['ipoptsolvercommon_3c_20solver_3c_20twicedifferentiablefunction_2c_20boost_3a_3ampl_3a_3avector_3c_20linearfunction_2c_20twicedifferentiablefunction_20_3e_20_3e_20_3e',['IpoptSolverCommon< Solver< TwiceDifferentiableFunction, boost::mpl::vector< LinearFunction, TwiceDifferentiableFunction > > >',['../a00002.html',1,'roboptim']]],
-  ['ipoptsolversparse',['IpoptSolverSparse',['../a00003.html',1,'roboptim']]],
   ['ipoptsolversparse',['IpoptSolverSparse',['../a00003.html#adfafc153e61cced21a437eca752fc44f',1,'roboptim::IpoptSolverSparse']]],
-  ['ipoptsolvertd',['IpoptSolverTd',['../a00004.html',1,'roboptim']]],
-  ['ipoptsolvertd',['IpoptSolverTd',['../a00004.html#a221312bc367e78b8aae20d1d5bb65ce2',1,'roboptim::IpoptSolverTd']]]
+  ['ipoptsolversparse',['IpoptSolverSparse',['../a00003.html',1,'roboptim']]],
+  ['ipoptsolvertd',['IpoptSolverTd',['../a00004.html#a221312bc367e78b8aae20d1d5bb65ce2',1,'roboptim::IpoptSolverTd']]],
+  ['ipoptsolvertd',['IpoptSolverTd',['../a00004.html',1,'roboptim']]]
 ];

@@ -1,5 +1,6 @@
 var a00006 =
 [
+    [ "ipoptMatrix_t", "a00006.html#ae09798c861ec8a2046879beb1d8898da", null ],
     [ "solver_t", "a00006.html#a17dfdf4e1563fcd62cb45f0b4af3d239", null ],
     [ "solverState_t", "a00006.html#a2ce196bcb5ccb94f5f60cd965df05c98", null ],
     [ "Tnlp", "a00006.html#ac272980718715c0b89ef23b0718e7ecd", null ],
